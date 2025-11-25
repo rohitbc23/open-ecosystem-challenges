@@ -1,3 +1,4 @@
+
 apiVersion: argoproj.io/v1alpha1
 kind: ApplicationSet
 metadata:
@@ -25,5 +26,9 @@ spec:
         server: https://kubernetes.default.svc
         namespace: echo-{{path.basename}}
       syncPolicy:
+        automated:
+          enabled: true
+          prune: true
+          selfHeal: true
         syncOptions:
           - CreateNamespace=true
