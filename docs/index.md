@@ -20,18 +20,38 @@ headaches.
 
 Browse the available adventures and pick one that interests you:
 
-| Name                                                     | 🧠 Learnings                                                                                                                       |
-|----------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
-| [Echoes Lost in Orbit](01-echoes-lost-in-orbit/index.md) | <ul><li>Debug GitOps flows</li><li>ApplicationSet pitfalls</li><li>Environment isolation</li><li>Sync, prune & self-heal</li></ul> |
+### January 2026: [Building CloudHaven](02-building-cloudhaven/index.md)
 
-More coming soon!
+**Story:** Join the Infrastructure Guild and modernize CloudHaven's infrastructure from manual provisioning to a
+self-service platform using Infrastructure as Code.
+
+| Level           | Name                  | 🧠 Key Learnings                                                                                                                                |
+|-----------------|-----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
+| 🟢 Beginner     | The Foundation Stones | <ul><li>Infrastructure as Code with OpenTofu</li><li>Remote state management with GCS backend</li><li>Dynamic & conditional resources</li></ul> |
+| 🟡 Intermediate | *Coming Soon*         |                                                                                                                                                 |
+| 🔴 Expert       | *Coming Soon*         |                                                                                                                                                 |
+
+
+### December 2025: [Echoes Lost in Orbit](01-echoes-lost-in-orbit/index.md)
+
+**Story:** Restore interstellar communications by fixing broken GitOps setups, progressive delivery systems, and
+observability pipelines across three galactic missions.
+
+| Level           | Name                              | 🧠 Key Learnings                                                                                                                                                                                                                                                     |
+|-----------------|-----------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 🟢 Beginner     | Broken Echoes                     | <ul><li>Debug GitOps flows with Argo CD</li><li>ApplicationSet templating & pitfalls</li><li>Environment isolation & namespaces</li><li>Sync policies: automated, prune & self-heal</li></ul>                                                                        |
+| 🟡 Intermediate | The Silent Canary                 | <ul><li>Progressive delivery with Argo Rollouts</li><li>Canary deployments & automated analysis</li><li>Write PromQL queries for health validation</li><li>Kube-state-metrics for deployment decisions</li></ul>                                                     |
+| 🔴 Expert       | Hyperspace Operations & Transport | <ul><li>Configure OpenTelemetry Collector pipelines</li><li>Spanmetrics connector (traces → metrics)</li><li>Detect "idle canaries" with traffic validation</li><li>Distributed tracing with Jaeger</li><li>Trace-derived metrics for progressive delivery</li></ul> |
+
+More adventures coming soon!
 
 ## 🎮 How It Works
 
-**Each level is independent** - start anywhere, complete in any order. Levels share a connected story but have their own:
+**Each level is independent** - start anywhere, complete in any order. Levels share a connected story but have their
+own:
 
 - Codespace configuration
-- Documentation and guides  
+- Documentation and guides
 - Validation tests
 
 **Levels:**
@@ -58,10 +78,12 @@ No! Each level is independent. Start wherever you feel comfortable.
 Absolutely! Perfect for upskilling, onboarding, internal training, and hackathons.
 
 **Are there costs?**  
-GitHub Codespaces offers free hours per month - usually sufficient for individual use. Check [GitHub's pricing](https://github.com/features/codespaces) for details.
+GitHub Codespaces offers free hours per month - usually sufficient for individual use.
+Check [GitHub's pricing](https://github.com/features/codespaces) for details.
 
 **Need help?**  
-Check adventure-specific docs, [open an issue](https://github.com/dynatrace-oss/open-ecosystem-challenges/issues), or start a [discussion](https://community.open-ecosystem.com/c/challenges).
+Check adventure-specific docs, [open an issue](https://github.com/dynatrace-oss/open-ecosystem-challenges/issues), or
+start a [discussion](https://community.open-ecosystem.com/c/challenges).
 
 ## 🚀 Ready to Start?
 

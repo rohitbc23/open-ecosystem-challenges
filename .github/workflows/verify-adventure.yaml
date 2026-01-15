@@ -7,8 +7,20 @@ on:
         required: true
         type: choice
         options:
+          - '🌆 Adventure 02 | 🟢 Beginner (The Foundation Stones)'
+          - 'Adventure 01 | 🔴 Expert (Hyperspace Operations and Transport)'
+          - 'Adventure 01 | 🟡 Intermediate (The Silent Canary)'
           - 'Adventure 01 | 🟢 Beginner (Broken Echoes)'
 jobs:
+  adventure02-beginner:
+    name: '🌆 Adventure 02 | 🟢 Beginner (The Foundation Stones)'
+    if: ${{ inputs.challenge == '🌆 Adventure 02 | 🟢 Beginner (The Foundation Stones)' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dynatrace-oss/open-ecosystem-challenge-verifier@main
+        with:
+          challenge: '02-building-cloudhaven_beginner'
   easy:
     name: 'Adventure 01 | 🟢 Beginner (Broken Echoes)'
     if: ${{ inputs.challenge == 'Adventure 01 | 🟢 Beginner (Broken Echoes)' }}
@@ -18,3 +30,21 @@ jobs:
       - uses: dynatrace-oss/open-ecosystem-challenge-verifier@main
         with:
           challenge: '01-echoes-lost-in-orbit_beginner'
+  intermediate:
+    name: 'Adventure 01 | 🟡 Intermediate (The Silent Canary)'
+    if: ${{ inputs.challenge == 'Adventure 01 | 🟡 Intermediate (The Silent Canary)' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dynatrace-oss/open-ecosystem-challenge-verifier@main
+        with:
+          challenge: '01-echoes-lost-in-orbit_intermediate'
+  expert:
+    name: 'Adventure 01 | 🔴 Expert (Hyperspace Operations and Transport)'
+    if: ${{ inputs.challenge == 'Adventure 01 | 🔴 Expert (Hyperspace Operations and Transport)' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dynatrace-oss/open-ecosystem-challenge-verifier@main
+        with:
+          challenge: '01-echoes-lost-in-orbit_expert'
